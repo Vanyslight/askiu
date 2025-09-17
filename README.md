@@ -17,7 +17,7 @@ Bootstrap
 Link para o site em produção: URL para acessar o site publicado no GitHub Pages.
 
 # Checklist de Funcionalidades
-- [] Login com RA
+-[] Login com RA
 - [] Enviar dúvidas
 - [] CRUD de dúvidas (Criar, editar, visualizar e apagar)
 - [] Caixa de respostas
