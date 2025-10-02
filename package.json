@@ -1,0 +1,26 @@
+{
+  "name": "askiu",
+  "version": "1.0.0",
+  "description": "O Askiu é o projeto de um site que visa auxiliar no processo de aprendizagem. Ele oferece um espaço colaborativo onde os alunos poderão compartilhar suas dúvidas sobre diferentes matérias ou tópicos. Esse sistema não apenas permite que os alunos expressem suas dúvidas, mas também cria um senso de comunidade entre eles. Outros estudantes que compartilhem das mesmas dúvidas poderão se beneficiar, promovendo um ambiente de apoio mútuo e troca de conhecimentos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vanyslight/askiu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vanyslight/askiu/issues"
+  },
+  "homepage": "https://github.com/Vanyslight/askiu#readme",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
