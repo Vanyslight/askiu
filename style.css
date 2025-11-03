@@ -1,0 +1,54 @@
+body,
+html {
+  background-color: #251c2d;
+  height: 100%; /* Garante que a altura é 100% */
+  color: white; /* Cor do texto padrão */
+}
+
+/* * Mágica do Bootstrap para centralizar tudo:
+         * vh-100: Ocupa a altura inteira da tela (100vh)
+         * d-flex: Ativa o "Flexbox"
+         * flex-column: Empilha os itens (logo, texto, botão) um em cima do outro
+         * justify-content-center: Centraliza verticalmente
+         * align-items-center: Centraliza horizontalmente
+        */
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura mínima da tela */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a logo (ajuste o 'width' se precisar) */
+.splash-logo {
+  max-width: 300px; /* Define uma largura máxima */
+  margin-bottom: 2rem; /* Espaço abaixo da logo (Bootstrap 'mb-4') */
+}
+
+/* Tagline (frase) */
+.splash-tagline {
+  font-size: 1.1rem;
+  color: #e0e0e0; /* Um cinza-claro/branco */
+  margin-bottom: 2.5rem; /* Espaço abaixo da frase (Bootstrap 'mb-5') */
+}
+
+/* * Botão "continuar" personalizado 
+         */
+.btn-continuar {
+  background-color: #ffffff; /* Fundo branco */
+  color: #251c2d; /* Texto com o roxo do fundo */
+  font-weight: bold; /* Negrito */
+  padding: 0.5rem 2rem; /* Espaçamento interno (altura, largura) */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-transform: uppercase; /* Caixa alta (CONTINUAR) */
+  text-decoration: none; /* Remove sublinhado (se for link) */
+  font-size: 0.9rem;
+}
+
+/* Efeito de "hover" (passar o mouse) */
+.btn-continuar:hover {
+  background-color: #f0f0f0; /* Um branco um pouco mais escuro */
+  color: #251c2d;
+}
