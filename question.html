@@ -1,246 +1,261 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Askiu - Nova Dúvida</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <style>
-        body, html {
-            background-color: #251c2d;
-            color: #f0f0f0;
-        }
+      body,
+      html {
+        background-color: #251c2d;
+        color: #f0f0f0;
+      }
 
-        /* Navbar*/
-        .navbar-askiu {
-            background-color: #3a2d44; 
-        }
-        .navbar-brand img {
-            height: 30px;
-        }
-      
-        .navbar-nav .nav-link {
-            color: #ffffff;
-            font-weight: 500;
-            font-size: 1.1rem;
-            margin-left: 1rem;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #d1b8ff; 
-        }
+      /* Navbar*/
+      .navbar-askiu {
+        background-color: #3a2d44;
+      }
+      .navbar-brand img {
+        height: 30px;
+      }
 
-        /* --- Estilos do Formulário --- */
-        .form-container {
-            max-width: 800px; 
-            margin-top: 4rem; 
-            margin-bottom: 4rem; 
-        }
+      .navbar-nav .nav-link {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+      }
+      .navbar-nav .nav-link:hover {
+        color: #d1b8ff;
+      }
 
-        /* "Informe sua dúvida" */
-        .form-title-bar {
-            background-color: #4a3a5a;
-            color: #ffffff;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-            padding: 0.75rem;
-            border-radius: 8px 8px 0 0; 
-        }
+      /* --- Estilos do Formulário --- */
+      .form-container {
+        max-width: 800px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
 
-        .form-control-askiu {
-            background-color: #4a3a5a; 
-            border: 1px solid #7a6a8a; 
-            color: #ffffff;           
-            border-radius: 8px;
-            padding: 0.75rem;
-        }
-        .form-control-askiu:focus {
-            background-color: #4a3a5a;
-            border-color: #d1b8ff; /* Borda roxa ao focar */
-            box-shadow: 0 0 0 0.25rem rgba(209, 184, 255, 0.25); /* Sombra roxa ao focar */
-            color: #ffffff;
-        }
+      /* "Informe sua dúvida" */
+      .form-title-bar {
+        background-color: #4a3a5a;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 0.75rem;
+        border-radius: 8px 8px 0 0;
+      }
 
-        .form-control-askiu::placeholder {
-            color: #aaa;
-        }
+      .form-control-askiu {
+        background-color: #4a3a5a;
+        border: 1px solid #7a6a8a;
+        color: #ffffff;
+        border-radius: 8px;
+        padding: 0.75rem;
+      }
+      .form-control-askiu:focus {
+        background-color: #4a3a5a;
+        border-color: #d1b8ff; /* Borda roxa ao focar */
+        box-shadow: 0 0 0 0.25rem rgba(209, 184, 255, 0.25); /* Sombra roxa ao focar */
+        color: #ffffff;
+      }
 
-        .form-control-askiu:disabled {
-            background-color: #3a2d44;
-            color: #999;
-        }
+      .form-control-askiu::placeholder {
+        color: #aaa;
+      }
 
-        
-        .form-body {
-            background-color: #3a2d44; 
-            padding: 2rem;
-            border-radius: 0 0 8px 8px; 
-        }
+      .form-control-askiu:disabled {
+        background-color: #3a2d44;
+        color: #999;
+      }
 
-        /* Botão "enviar" */
-        .btn-enviar {
-            background-color: #7b2cbf;
-            border: none;
-            color: white;
-            font-weight: bold;
-            padding: 0.6rem 2.5rem;
-        }
-        .btn-enviar:hover {
-            background-color: #9a4fd9;
-            color: white;
-        }
+      .form-body {
+        background-color: #3a2d44;
+        padding: 2rem;
+        border-radius: 0 0 8px 8px;
+      }
+
+      /* Botão "enviar" */
+      .btn-enviar {
+        background-color: #7b2cbf;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 0.6rem 2.5rem;
+      }
+      .btn-enviar:hover {
+        background-color: #9a4fd9;
+        color: white;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-askiu" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="askiu.svg" alt="Askiu Logo" />
+        </a>
 
-   <nav class="navbar navbar-expand-lg navbar-askiu" data-bs-theme="dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="askiu.svg" alt="Askiu Logo">
-            </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinksDoAskiu"
+          aria-controls="navLinksDoAskiu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinksDoAskiu" aria-controls="navLinksDoAskiu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navLinksDoAskiu">
-                
-                <div class="navbar-nav ms-auto"> 
-                    <a class="nav-link" href="question.html">question</a>
-                    <a class="nav-link" href="home.html">home</a>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navLinksDoAskiu">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="question.html">question</a>
+            <a class="nav-link" href="home.html">home</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <div class="container form-container">
-        
-        <div class="form-title-bar">
-            Informe sua dúvida
-        </div>
+      <div class="form-title-bar">Informe sua dúvida</div>
 
-        <div class="form-body">
-            <form>
-                <div class="mb-3">
-                    <label for="duvida" class="form-label visually-hidden">Escreva sua dúvida aqui...</label>
-                    <textarea class="form-control form-control-askiu" id="duvida" rows="5" placeholder="Escreva sua dúvida aqui..."></textarea>
-                </div>
+      <div class="form-body">
+        <form>
+          <div class="mb-3">
+            <label for="duvida" class="form-label visually-hidden"
+              >Escreva sua dúvida aqui...</label
+            >
+            <textarea
+              class="form-control form-control-askiu"
+              id="duvida"
+              rows="5"
+              placeholder="Escreva sua dúvida aqui..."
+            ></textarea>
+          </div>
 
-                <div class="row g-3 mb-3"> <div class="col-md-7">
-                        <label for="cep" class="form-label">Insira o CEP</label>
-                        <input type="text" class="form-control form-control-askiu" id="cep" placeholder="00000-000">
-                    </div>
-                    
-                    <div class="col-md-5">
-                        <label for="numero" class="form-label">Número</label>
-                        <input type="text" class="form-control form-control-askiu" id="numero" placeholder="Ex: 123">
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="municipio" class="form-label">Município</label>
-                    <input type="text" class="form-control form-control-askiu" id="municipio" disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="bairro" class="form-label">Bairro</label>
-                    <input type="text" class="form-control form-control-askiu" id="bairro" disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="logradouro" class="form-label">Logradouro</label>
-                    <input type="text" class="form-control form-control-askiu" id="logradouro" disabled>
-                </div>
-                <div class="text-center mt-4">
-                <button type="button" class="btn btn-enviar" data-bs-toggle="modal" data-bs-target="#sucessoModal">
-                    enviar
-                </button>
+          <div class="row g-3 mb-3">
+            <div class="col-md-7">
+              <label for="cep" class="form-label">Insira o CEP</label>
+              <input
+                type="text"
+                class="form-control form-control-askiu"
+                id="cep"
+                placeholder="00000-000"
+              />
             </div>
-              
-            </form>
-        </div>
 
+            <div class="col-md-5">
+              <label for="numero" class="form-label">Número</label>
+              <input
+                type="text"
+                class="form-control form-control-askiu"
+                id="numero"
+                placeholder="Ex: 123"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="municipio" class="form-label">Município</label>
+            <input
+              type="text"
+              class="form-control form-control-askiu"
+              id="municipio"
+              disabled
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input
+              type="text"
+              class="form-control form-control-askiu"
+              id="bairro"
+              disabled
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="logradouro" class="form-label">Logradouro</label>
+            <input
+              type="text"
+              class="form-control form-control-askiu"
+              id="logradouro"
+              disabled
+            />
+          </div>
+          <div class="text-center mt-4">
+            <button
+              type="button"
+              class="btn btn-enviar"
+              data-bs-toggle="modal"
+              data-bs-target="#sucessoModal"
+            >
+              enviar
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
-</form>
-        </div> </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <script>
-        
-        console.log('Script da API de CEP carregado.'); 
-
-        const cepInput = document.getElementById('cep');
-
-        if (cepInput) {
-            console.log('Campo "cep" encontrado no HTML.');
-
-            cepInput.addEventListener('blur', function() {
-                
-                console.log('EVENTO BLUR (clique fora) FUNCIONOU!'); 
-                let cep = this.value.replace(/\D/g, ''); 
-                console.log('CEP digitado (limpo):', cep);
-
-                if (cep.length === 8) {
-                    
-                    console.log('CEP tem 8 dígitos. Tentando chamar a API...');
-
-                    fetch(`https://viacep.com.br/ws/${cep}/json/`)
-                        .then(response => {
-                            console.log('API respondeu!', response);
-                            if (!response.ok) {
-                               throw new Error('Erro na rede: ' + response.statusText);
-                            }
-                            return response.json();
-                        })
-                        .then(data => {
-                            console.log('Dados recebidos:', data);
-
-                            if (data.erro) {
-                                console.error('API retornou um erro: CEP não encontrado');
-                                alert('CEP não encontrado.');
-                            } else {
-                                
-                                console.log('Preenchendo campos...');
-                                document.getElementById('logradouro').value = data.logradouro;
-                                document.getElementById('bairro').value = data.bairro;
-                                document.getElementById('municipio').value = data.localidade;
-                                console.log('Campos preenchidos com sucesso!');
-                            }
-                        })
-                        .catch(error => {
-                            console.error('ERRO GRAVE NO FETCH (chamada da API):', error); 
-                            alert('Houve um erro ao buscar o CEP. Verifique o console.');
-                        });
-                } else {
-                    console.warn('CEP inválido (não tem 8 dígitos)');
-                }
-            });
-
-        } else {
-            console.error('ERRO CRÍTICO: Não foi possível encontrar o <input> com id="cep"');
-        }
-
-    </script>
-    
-    <div class="modal fade" id="sucessoModal" tabindex="-1" aria-labelledby="sucessoModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="sucessoModal"
+      tabindex="-1"
+      aria-labelledby="sucessoModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
-        
-        <div class="modal-content" style="background-color: #3a2d44; border: 2px solid #7a6a8a; border-radius: 12px; color: white;">
-          
-          <div class="modal-body text-center" style="padding: 2.5rem;">
-            
-            <h5 class="modal-title" id="sucessoModalLabel" style="font-size: 1.5rem; margin-bottom: 2rem;">
+        <div
+          class="modal-content"
+          style="
+            background-color: #3a2d44;
+            border: 2px solid #7a6a8a;
+            border-radius: 12px;
+            color: white;
+          "
+        >
+          <div class="modal-body text-center" style="padding: 2.5rem">
+            <h5
+              class="modal-title"
+              id="sucessoModalLabel"
+              style="font-size: 1.5rem; margin-bottom: 2rem"
+            >
               Dúvida enviada com sucesso!
             </h5>
-            
-            <a href="home.html" class="btn" style="background-color: #ffffff; color: #251c2d; font-weight: bold; padding: 0.5rem 2rem;">
-                continuar
+
+            <a
+              href="home.html"
+              class="btn"
+              style="
+                background-color: #ffffff;
+                color: #251c2d;
+                font-weight: bold;
+                padding: 0.5rem 2rem;
+              "
+            >
+              continuar
             </a>
           </div>
         </div>
       </div>
     </div>
-    </body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="question.js"></script>
+  </body>
 </html>
