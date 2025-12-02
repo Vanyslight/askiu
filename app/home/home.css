@@ -31,7 +31,6 @@ html {
   margin-bottom: 2rem;
 }
 
-/* "Card" da Pergunta */
 .question-card {
   background-color: #3a2d44;
   border: 2px solid #5a4a6a;
@@ -70,6 +69,14 @@ html {
   color: #251c2d;
 }
 
+#respostaModal .modal-content,
+#respostaSucessoModal .modal-content {
+  background-color: #3a2d44;
+  border: 2px solid #7a6a8a;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
 .form-control-askiu {
   background-color: #4a3a5a;
   border: 1px solid #7a6a8a;
@@ -99,4 +106,21 @@ html {
 .btn-enviar-modal:hover {
   background-color: #9a4fd9;
   color: white;
+}
+
+#questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .question-card {
+    padding: 1rem 1.2rem;
+  }
 }

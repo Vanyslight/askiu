@@ -1,0 +1,90 @@
+body,
+html {
+  background-color: #251c2d;
+  color: #f0f0f0;
+}
+
+/* Navbar*/
+.navbar-askiu {
+  background-color: #3a2d44;
+}
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+.navbar-nav .nav-link:hover {
+  color: #d1b8ff;
+}
+
+/* --- Estilos do Formulário --- */
+.form-container {
+  max-width: 800px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* "Informe sua dúvida" */
+.form-title-bar {
+  background-color: #4a3a5a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.form-control-askiu {
+  background-color: #4a3a5a;
+  border: 1px solid #7a6a8a;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+.form-control-askiu:focus {
+  background-color: #4a3a5a;
+  border-color: #d1b8ff; /* Borda roxa ao focar */
+  box-shadow: 0 0 0 0.25rem rgba(209, 184, 255, 0.25); /* Sombra roxa ao focar */
+  color: #ffffff;
+}
+
+.form-control-askiu::placeholder {
+  color: #aaa;
+}
+
+.form-control-askiu:disabled {
+  background-color: #3a2d44;
+  color: #999;
+}
+
+.form-body {
+  background-color: #3a2d44;
+  padding: 2rem;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Botão "enviar" */
+.btn-enviar {
+  background-color: #7b2cbf;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 2.5rem;
+}
+.btn-enviar:hover {
+  background-color: #9a4fd9;
+  color: white;
+}
+
+.modal-content {
+  background-color: #3a2d44;
+  border: 2px solid #7a6a8a;
+  border-radius: 12px;
+  color: white;
+}
