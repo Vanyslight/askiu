@@ -1,0 +1,1 @@
+{"version":3,"file":"PerguntaErro.d.ts","sourceRoot":"","sources":["../../src/errors/PerguntaErro.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,OAAO,YAAa,SAAQ,KAAK;IACtC,OAAO,CAAC,EAAE,GAAG,CAAC;gBAET,QAAQ,EAAE,MAAM,EAAE,OAAO,CAAC,EAAE,GAAG;IAM3C,QAAQ,IAAI,MAAM;CAKnB"}

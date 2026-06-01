@@ -1,0 +1,1 @@
+{"version":3,"file":"Resposta.d.ts","sourceRoot":"","sources":["../../src/view/Resposta.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,MAAM,8BAA8B,CAAC;AAC1D,OAAO,UAAU,MAAM,aAAa,CAAC;AACrC,OAAO,EAAE,KAAK,EAAE,MAAM,oBAAoB,CAAC;AAG3C,MAAM,CAAC,OAAO,OAAO,QAAS,YAAW,KAAK;IACrC,cAAc,EAAE,cAAc,CAAC;IAC/B,MAAM,oBAAgB;gBAEV,cAAc,EAAE,cAAc;IAI1C,MAAM,IAAI,IAAI;CAkDtB"}
