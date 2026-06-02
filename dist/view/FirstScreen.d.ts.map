@@ -1,1 +1,0 @@
-{"version":3,"file":"FirstScreen.d.ts","sourceRoot":"","sources":["../../src/view/FirstScreen.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,MAAM,8BAA8B,CAAC;AAE1D,OAAO,EAAE,KAAK,EAAE,MAAM,oBAAoB,CAAC;AAE3C,MAAM,CAAC,OAAO,OAAO,WAAY,YAAW,KAAK;IAC/C,OAAO,CAAC,MAAM,CAAgB;IACvB,cAAc,EAAE,cAAc,CAAC;gBAE1B,cAAc,EAAE,cAAc;IAInC,MAAM,IAAI,IAAI;CA0BtB"}

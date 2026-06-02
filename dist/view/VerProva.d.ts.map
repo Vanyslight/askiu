@@ -1,1 +1,0 @@
-{"version":3,"file":"VerProva.d.ts","sourceRoot":"","sources":["../../src/view/VerProva.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,MAAM,8BAA8B,CAAC;AAC1D,OAAO,UAAU,MAAM,aAAa,CAAC;AACrC,OAAO,EAAE,KAAK,EAAE,MAAM,oBAAoB,CAAC;AAE3C,MAAM,CAAC,OAAO,OAAO,QAAS,YAAW,KAAK;IACrC,cAAc,EAAE,cAAc,CAAC;IAC/B,MAAM,oBAAgB;gBAEV,cAAc,EAAE,cAAc;IAIjD,MAAM,IAAI,IAAI;CAwBf"}

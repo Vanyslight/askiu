@@ -1,1 +1,0 @@
-{"version":3,"file":"CadastrarPergunta.d.ts","sourceRoot":"","sources":["../../src/view/CadastrarPergunta.ts"],"names":[],"mappings":"AAAA,OAAO,cAAc,MAAM,8BAA8B,CAAC;AAC1D,OAAO,UAAU,MAAM,aAAa,CAAC;AACrC,OAAO,EAAE,KAAK,EAAE,MAAM,oBAAoB,CAAC;AAG3C,MAAM,CAAC,OAAO,OAAO,iBAAkB,YAAW,KAAK;IAC9C,cAAc,EAAE,cAAc,CAAC;IAC/B,MAAM,oBAAgB;gBAEV,cAAc,EAAE,cAAc;IAG1C,MAAM,IAAI,IAAI;CAgDtB"}
