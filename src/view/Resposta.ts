@@ -18,7 +18,7 @@ export default class Resposta implements IView {
     console.log("==============================\n");
 
     const all = this.maincontroller.listQuestions();
-    const noAnswered = all.filter((question) => question.status === false);
+    const noAnswered = this.maincontroller.listQuestions(false);
 
     if (all.length === 0) {
       console.log("Nenhuma pergunta cadastrada ainda.");
@@ -31,6 +31,7 @@ export default class Resposta implements IView {
         console.log(
           `[${question.id}] ${question.title} - ${question.question}`,
         );
+        console.log();
       });
 
       try {

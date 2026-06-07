@@ -1,12 +1,13 @@
 import { eMateria } from "../model/EMateria";
 import Question from "../model/Question";
+import Repository from "./Repository";
 
 export default class Database {
-  private questions: Question[] = [];
+  private questions = new Repository<Question>();
   private nextId: number = 1;
 
-  addQuestion(question: Question): void {
-    this.questions.push(question);
+  private addQuestion(question: Question): void {
+    this.questions.add(question);
   }
   createQuestion(title: eMateria, text: string): void {
     const id = (this.nextId++).toString();
@@ -14,14 +15,17 @@ export default class Database {
     this.addQuestion(newQuestion);
   }
 
-  listQuestions(): Question[] {
-    return [...this.questions]; // "..." retorna uma cópia do array;
+  listQuestions(): Question[];
+  listQuestions(answered: boolean): Question[];
+  listQuestions(answered?: boolean): Question[] {
+    const all = this.questions.list();
+    if (answered === undefined) return all;
+    return all.filter((question) => question.status === answered);
   }
   findQuestionById(id: string): Question | undefined {
     return this.questions.find((question) => question.id === id);
-    //dentro do arrow function posso criar nome, o question está no singular
-    //porque é o id de uma pergunta
   }
+
   answerQuestion(id: string, answer: string): boolean {
     const question = this.findQuestionById(id);
     if (!question) {

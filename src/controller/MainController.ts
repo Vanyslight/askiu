@@ -9,10 +9,10 @@ import { eMateria } from "../model/EMateria";
 import PromptSync from "prompt-sync";
 
 export default class MainController {
-  public viewAtual: IView; //interface para trocar as minhas views;
+  private viewAtual: IView; //interface para trocar as minhas views;
   private database: Database;
-  public action: boolean = true; // coloquei para fechar a firstscreen
-  public prompt = PromptSync();
+  private action: boolean = true; // coloquei para fechar a firstscreen
+  private prompt = PromptSync();
 
   constructor() {
     this.database = new Database();
@@ -67,8 +67,13 @@ export default class MainController {
     this.database.createQuestion(titulo, texto);
   }
 
-  public listQuestions(): Question[] {
-    return this.database.listQuestions();
+  public listQuestions(): Question[];
+  public listQuestions(answered: boolean): Question[];
+  public listQuestions(answered?: boolean): Question[] {
+    if (answered === undefined) {
+      return this.database.listQuestions();
+    }
+    return this.database.listQuestions(answered);
   }
 
   public answerQuestion(id: string, answer: string): boolean {

@@ -16,9 +16,7 @@ export default class VerProva implements IView {
     console.log("           Ver Prova          ");
     console.log("==============================\n");
 
-    const answered = this.maincontroller
-      .listQuestions()
-      .filter((question) => question.status === true);
+    const answered = this.maincontroller.listQuestions(true);
 
     if (this.maincontroller.listQuestions().length === 0) {
       console.log("Nenhuma pergunta cadastrada ainda!");

@@ -1,10 +1,9 @@
+import BaseQuestion from "./BaseQuestion";
 import { eMateria } from "./EMateria";
-export default class Question {
-  public id: string;
-  public title: string;
+
+export default class Question extends BaseQuestion {
   public question: string;
   public answer: string;
-  public status: boolean;
 
   public constructor(
     id: string,
@@ -13,10 +12,8 @@ export default class Question {
     answer: string = "",
     status: boolean = false,
   ) {
-    this.id = id;
-    this.title = title;
+    super(id, title as string, status);
     this.question = question;
     this.answer = answer;
-    this.status = status;
   }
 }

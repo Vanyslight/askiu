@@ -10,6 +10,7 @@ export default class PerguntaErro extends Error {
   toString(): string {
     return `[${this.name}] ${this.message}`;
   }
-
+  //aqui estou personalizando a minha sobrescrita da classe error
+  //tostring já existe em todo objeto javascript, todos herdam ele;
   //só existe sobrescrita quando a classe filha herda de uma classe pai;
 }
